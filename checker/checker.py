@@ -7,7 +7,7 @@ URLS=["https://www.google.com", "https://www.youtube.com", "https://httpbin.org"
 r = redis.Redis (host='localhost', port=6379, decode_responses=True)
 
 def check_url(url):
- headers = {"User-Agents": "Mozilla/5.0"}
+ headers = {"User-Agent": "Mozilla/5.0"}
  try:
    response = requests.get(url, timeout=5)
    if response.status_code<500:
