@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SiteWatch Dashboard</title>
+</head>
+<body>
+    <h1>SiteWatch</h1>
+    <table border="1">
+        <tr>
+            <th>URL</th>
+            <th>Status</th>
+            <th>Last Checked</th>
+        </tr>
+        {% for site in sites %}
+        <tr>
+            <td>{{ site.url }}</td>
+            <td>{{ site.status }}</td>
+            <td>{{ site.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

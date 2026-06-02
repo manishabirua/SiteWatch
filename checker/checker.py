@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 import redis
 
-URLS=["https://www.google.com", "https://www.youtube.com", "https://httpbin.org", "https://httpstat.us/503"]
+URLS=["https://www.google.com", "https://www.youtube.com", "https://httpbin.org", "https://httpstat.us/503", "https://claude.ai/new"]
 r = redis.Redis (host='localhost', port=6379, decode_responses=True)
 
 def check_url(url):
